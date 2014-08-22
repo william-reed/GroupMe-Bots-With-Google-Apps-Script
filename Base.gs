@@ -14,7 +14,7 @@ function doPost(e){
   var name = post.name
   
   //check if server is running (diagnostics)
-  if(text.toLowerCase().substring(0, 5) == "!hi"){
+  if(text.toLowerCase().substring(0, 3) == "!hi"){
     sendText("Hello, " + name);
   }
 }
