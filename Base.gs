@@ -14,7 +14,7 @@ function doPost(e){
   
   //check if user entered command '!time'
   //if so respond with the time
-  if(text.toLowerCaser().substring(0, 5) == "!time"){
+  if(text.toLowerCase().substring(0, 5) == "!time"){
     sendText("5:03 PM");
   }
 }
