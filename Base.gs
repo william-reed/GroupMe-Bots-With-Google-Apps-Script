@@ -11,10 +11,10 @@ function sendImage(text, imageURL){
 function doPost(e){
   var post = JSON.parse(e.postData.getDataAsString());
   var text = post.text;
+  var name = post.name
   
-  //check if user entered command '!time'
-  //if so respond with the time
-  if(text.toLowerCase().substring(0, 5) == "!time"){
-    sendText("5:03 PM");
+  //check if server is running (diagnostics)
+  if(text.toLowerCase().substring(0, 5) == "!hi"){
+    sendText("Hello, " + name);
   }
 }
