@@ -18,3 +18,10 @@ function doPost(e){
     sendText("Hello, " + name);
   }
 }
+
+//send a message every hour see https://developers.google.com/apps-script/reference/script/clock-trigger-builder
+ScriptApp.newTrigger("sendTimelyMessage").timeBased().everyHours(1).create();
+
+function sendTimelyMessage(){
+  sendText("It has been one hour");
+}
