@@ -16,6 +16,7 @@ function doPost(e){
   }
 }
 
+//get the random number
 function rollDice(){
  return Math.floor(Math.random() * (6 - 1 + 1)) + 1;
 }
