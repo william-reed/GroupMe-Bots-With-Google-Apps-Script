@@ -1,5 +1,5 @@
 //a simple program that uses the '!dice' command to return a dice number
-var botId = "19f76e34578b8da260a59d3819";
+var botId = "your bot id here";
 function sendText(text){
   UrlFetchApp.fetch("https://api.groupme.com/v3/bots/post", {"method":"post", "payload":'{"bot_id":"' + botId + '","text":"' + text + '"}'})
 }
