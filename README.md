@@ -11,6 +11,7 @@ This repository is meant to grow and serve as an easy way to get started with bo
 
 ##[Wiki](https://github.com/wreed12345/GroupMe-Google-Apps-Script-Examples/wiki)
 Feel free to message me with tutorials you have made or something you would like to see here
+[Deploying and Using Google Apps Script](https://github.com/wreed12345/GroupMe-Google-Apps-Script-Examples/wiki/Deploying-and-Using-a-Google-Apps-Script)
 
 ###To Do:
 
