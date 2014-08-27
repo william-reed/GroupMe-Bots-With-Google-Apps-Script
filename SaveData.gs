@@ -3,6 +3,11 @@
 //to retrieve your data type '!load'
 //The example case provided can be modified to save your data however you desire and load at your will
 
+//useful links
+//https://developers.google.com/apps-script/reference/spreadsheet/spreadsheet-app?hl=es-ES
+//https://developers.google.com/apps-script/reference/spreadsheet/sheet?hl=es-ES
+//https://developers.google.com/apps-script/reference/document/
+
 //this is the url of your spreadsheet where the data is saved. Make sure your Google Apps Script account and Google Drive
 //account are the same so your bot can access your spreadsheet with no problems
 var sheet = SpreadsheetApp.openByUrl('https://docs.google.com/spreadsheets/d/1qA3tcO1Wl0f1ccqwezEyP7-lo1CNbjqr_a5kMaNlzk4/edit');
