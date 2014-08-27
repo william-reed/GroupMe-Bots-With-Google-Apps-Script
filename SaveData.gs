@@ -1,4 +1,4 @@
-//feel free to run this to get a feel for it
+//feel free to run this to get a feel for it. just make sure you change the bot id to your own
 //when running in your group chat type the command '!save <data>' where <data> is whatever you want to save
 //to retrieve your data type '!load'
 //The example case provided can be modified to save your data however you desire and load at your will
