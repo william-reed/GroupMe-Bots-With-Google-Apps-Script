@@ -1,6 +1,6 @@
 //lets keep track of some users sales
 
-var dataMap = new DataMap('https://docs.google.com/spreadsheets/d/1qA3tcO1Wl0f1ccqwezEyP7-lo1CNbjqr_a5kMaNlzk4/edit');
+var dataMap = new DataMap('your spreadsheet link here. under same account as google apps script one');
 
 function doPost(e) {
   var post = JSON.parse(e.postData.getDataAsString());
@@ -28,7 +28,7 @@ function getSales(name){
 }
 
 //your bot id
-var botId = "19f76e34578b8da260a59d3819";
+var botId = "your bot id here";
 //sends text to the group chat
 function sendText(text){
   UrlFetchApp.fetch("https://api.groupme.com/v3/bots/post", {"method":"post", "payload":'{"bot_id":"' + botId + '","text":"' + text + '"}'})
