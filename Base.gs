@@ -1,3 +1,5 @@
+//an example for some basic Google Apps Script / Bot stuff
+
 var botId = "your bot id here";
 function sendText(text){
   UrlFetchApp.fetch("https://api.groupme.com/v3/bots/post", {"method":"post", "payload":'{"bot_id":"' + botId + '","text":"' + text + '"}'})
