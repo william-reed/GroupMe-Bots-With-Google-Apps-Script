@@ -17,8 +17,9 @@ Feel free to message me with tutorials you have made or something you would like
 ###To Do:
 
 Please feel free to add the following:
-- How To for setting up and deploying a Google Apps Script
+- ~~How To for setting up and deploying a Google Apps Script~~
 - ~~Script for sending messages at a particular time~~
+- ~~Implement a data saving system~~
 - Get more people to contribute
  
 ###Contact
