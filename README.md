@@ -14,6 +14,13 @@ Feel free to message me with tutorials you have made or something you would like
 - [Deploying and Using Google Apps Script] (https://github.com/wreed12345/GroupMe-Google-Apps-Script-Examples/wiki/Deploying-and-Using-a-Google-Apps-Script)
 - [Data Saving](https://github.com/wreed12345/GroupMe-Google-Apps-Script-Examples/wiki/Data-Saving)
 
+###Examples
+- [Base Example containing general stuff](https://github.com/wreed12345/GroupMe-Google-Apps-Script-Examples/blob/master/Base.gs)
+- [System message parser](https://github.com/wreed12345/GroupMe-Google-Apps-Script-Examples/blob/master/Random%20Examples/system_parse.gs)
+- [Dice Roller](https://github.com/wreed12345/GroupMe-Google-Apps-Script-Examples/blob/master/Random%20Examples/Dice.gs)
+- [Data Saving example / Sale tracking bot](https://github.com/wreed12345/GroupMe-Google-Apps-Script-Examples/blob/master/Data%20Saving/DataMap%20Saving/SaleTrackerBot.gs)
+
+
 ###To Do:
 
 Please feel free to add the following:
