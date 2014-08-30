@@ -1,5 +1,6 @@
 // A bot that auto responds when certain system messages are sent.
 // Author: Sean Hoyt (Deadman96385)
+// Editor: Chris Walker (whoiscwalker)
 var botId = "your bot id here";
 function sendText(text){
   UrlFetchApp.fetch("https://api.groupme.com/v3/bots/post", {"method":"post", "payload":'{"bot_id":"' + botId + '","text":"' + text + '"}'})
