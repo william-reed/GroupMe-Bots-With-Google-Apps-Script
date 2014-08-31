@@ -1,5 +1,6 @@
 // A bot that auto responds when certain system messages are sent.
 // Author: Sean Hoyt (Deadman96385)
+// Editor: Chris Walker (whoiscwalker)
 var botId = "your bot id here";
 function sendText(text){
   UrlFetchApp.fetch("https://api.groupme.com/v3/bots/post", {"method":"post", "payload":'{"bot_id":"' + botId + '","text":"' + text + '"}'})
@@ -23,8 +24,9 @@ function doPost(e){
      sendText("Cya sucker");
 
 // Changed NickName
-  }else if(text.indexOf("changed name to") > -1 && user_id == 0)
+  }else if(text.indexOf("changed name to") > -1 && user_id == 0){
      sendText("I liked the old one better");
+  }
 }
 
 //required method for google script
