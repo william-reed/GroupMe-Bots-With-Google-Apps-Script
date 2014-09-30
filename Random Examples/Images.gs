@@ -1,6 +1,9 @@
-//you need a custom search engine setup with google
+//you need a custom search engine setup with Google. Enable image search in the setup.
 //and an api key. Both are free
 //100 queries a day limit from Google
+//
+//example !image pamala anderson
+//will return first image from Google Image search. 
 
 
 
