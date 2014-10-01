@@ -3,7 +3,7 @@
 //100 queries a day limit from Google
 //
 //example !image pamala anderson
-//will return first image from Google Image search. 
+//will return first image from Google Image search.
 
 
 
@@ -15,31 +15,33 @@ function sendText(text){
 function doPost(e){
 	var post = JSON.parse(e.postData.getDataAsString());
 	var text = post.text;
-	
+
 	 if(text.toLowerCase().substring(0, 6) == "!image"){
 		var query = text.slice(6);
 		sendText(image(query).toString());
-  }
+     }
+}
+
 
 function image(query) {
-  
+
     //how many results do you want returned
     var results = 1;
-    //only safe images
+    //on or off for safe images (no porn etc when on)
     var safe = 'off';
    //your google api key
-    var api_key = 'Your Google API';
-  
+    var api_key = 'API_KEY';
+
    //google search engine id https://www.google.com/cse/create/new
     var search_engine_id = 'CSE ID';
 
     
-theUrl = 'https://www.googleapis.com/customsearch/v1?q=' 
-  + query + '&safe='+ safe + '&num=' + results + '&cx=' 
+ var theUrl = 'https://www.googleapis.com/customsearch/v1?q='
+  + query + '&safe='+ safe + '&num=' + results + '&cx='
   + search_engine_id + '&searchType=image&key=' + api_key;
-  
 
-  
+
+
   try {
     var response = UrlFetchApp.fetch(theUrl);
     var json = response.getContentText();
@@ -52,7 +54,10 @@ theUrl = 'https://www.googleapis.com/customsearch/v1?q='
     Logger.log(Exception);
     var link = 'You pushed me too far, too fast';
   }
-   
+
     return link;
-    
-};
+
+}
+
+
+function doGet(){}
