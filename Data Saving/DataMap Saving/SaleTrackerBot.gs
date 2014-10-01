@@ -1,3 +1,5 @@
+//see https://github.com/wreed12345/GroupMe-Google-Apps-Script-Examples/wiki/Data-Saving 
+//for a more detailed explanation
 //lets keep track of some users sales
 
 var dataMap = new DataMap('your spreadsheet link here. under same account as google apps script one');
