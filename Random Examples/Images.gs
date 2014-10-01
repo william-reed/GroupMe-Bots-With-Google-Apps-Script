@@ -4,7 +4,10 @@
 //
 //example !image pamala anderson
 //will return first image from Google Image search.
-
+//Need a Google API ID with the Custom Search Enabled
+//https://code.google.com/apis/console
+//Custom Search Engine
+////google search engine id https://www.google.com/cse/create/new
 
 
 var botId = "Your bot ID";
@@ -35,7 +38,7 @@ function image(query) {
    //google search engine id https://www.google.com/cse/create/new
     var search_engine_id = 'CSE ID';
 
-    
+
  var theUrl = 'https://www.googleapis.com/customsearch/v1?q='
   + query + '&safe='+ safe + '&num=' + results + '&cx='
   + search_engine_id + '&searchType=image&key=' + api_key;
