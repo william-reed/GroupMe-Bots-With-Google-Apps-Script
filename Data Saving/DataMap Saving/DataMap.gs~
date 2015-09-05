@@ -29,16 +29,6 @@ DataMap.prototype.get = function(key) {
  }
 }
 
-//gets the size of this map
-DataMap.prototype.getSize = function () { 
-  for(i = 1; i < this.sheet.getMaxRows(); i++){
-      if(this.sheet.getRange(i, 1).getValue() == "" && this.sheet.getRange(i, 2).getValue() == "")
-      {
-        return i;
-      }
-  }
-}
-
 //set a value with its key, value
 DataMap.prototype.set = function(key, value) {
   for(j = 1; j < this.sheet.getMaxRows(); j++){
