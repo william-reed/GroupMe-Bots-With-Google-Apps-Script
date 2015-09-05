@@ -1,13 +1,13 @@
-#GroupMe Google Apps Script Examples
-A bunch of examples for using the GroupMe API with Google Apps Script
+#GroupMe Bots with Google Apps Script
+A bunch of examples for using the GroupMe API with Google Apps Script and some useful methods to use within your bot such as data saving methods (Map, List like structures integrated with Google Drive)
 
-###Why use Google Apps Script?
+###Why use Google Apps Script for your bots?
 
 Google Apps Script offers a service free of charge for providing anyone with a way to host there GroupMe bot for free 24/7. So your bot that you would like to respond to certain commands (for example) could be on all day every day for free
 
 ###Purpose of this Repository
 
-This repository is meant to grow and serve as an easy way to get started with bots using Google Apps Script. If you created something that you think is awesome and you think other people could benefit form it create a pull request and it will be added to this repo for the world to see.
+This repository is meant to grow and serve as an easy way to get started with bots using Google Apps Script. If you created something that you think is awesome and you think other people could benefit form it create a pull request and it will be added to this repo for the world to see. This repository also offers certain files which act as a library of some sort to aid in data saving specifically.
 
 ##[Wiki](https://github.com/wreed12345/GroupMe-Google-Apps-Script-Examples/wiki)
 Feel free to message me with tutorials you have made or something you would like to see here
