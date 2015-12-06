@@ -26,7 +26,7 @@ DataMap.prototype.getSize = function () {
   for(i = 1; i < this.sheet.getMaxRows(); i++){
       if(this.sheet.getRange(i, 1).getValue() == "")
       {
-        return i;
+        return i - 1;
       }
   }
 }
