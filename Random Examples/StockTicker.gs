@@ -22,7 +22,8 @@ function doPost(e){
 }
 
 function stock(query) {
-  var url = 'http://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=' + query + '&apikey=WJPW'
+  // Replace 'demo' with your api key from http://www.alphavantage.co/support/#api-key
+  var url = 'http://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=' + query + '&apikey=demo'
   
   try {
     var response = UrlFetchApp.fetch(url);
