@@ -1,4 +1,4 @@
-var botId = "f5faa748cc0ea3bb6d9fca2405";
+var botId = "your bot id here";
 
 function sendText(text){
   UrlFetchApp.fetch("https://api.groupme.com/v3/bots/post", {"method":"post", "payload":'{"bot_id":"' + botId + '","text":"' + text + '"}'});
@@ -22,15 +22,15 @@ function doPost(e){
 }
 
 function stock(query) {
-  var url = 'http://finance.yahoo.com/webservice/v1/symbols/' + query + '/quote?format=json';
+  var url = 'http://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=' + query + '&apikey=WJPW'
   
   try {
     var response = UrlFetchApp.fetch(url);
     var json = response.getContentText();
     var data = JSON.parse(json);
     
-    var price = data.list.resources[0].resource.fields.price;
-    var name = data.list.resources[0].resource.fields.name;
+    var price = data["Realtime Global Securities Quote"]["03. Latest Price"];
+    var name = data["Realtime Global Securities Quote"]["02. Exchange Name"];
   }
   catch (Exception)
   {
