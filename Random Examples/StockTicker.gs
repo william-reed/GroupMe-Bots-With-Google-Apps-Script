@@ -31,7 +31,7 @@ function stock(query) {
     var data = JSON.parse(json);
     
     var price = data["Realtime Global Securities Quote"]["03. Latest Price"];
-    var name = data["Realtime Global Securities Quote"]["02. Exchange Name"];
+    var name = data["Realtime Global Securities Quote"]["01. Symbol"];
   }
   catch (Exception)
   {
