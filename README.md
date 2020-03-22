@@ -21,6 +21,7 @@ Feel free to message me with tutorials you have made or something you would like
 - [Data Saving example / Sale tracking bot](https://github.com/wreed12345/GroupMe-Google-Apps-Script-Examples/blob/master/Data%20Saving/DataMap%20Saving/SaleTrackerBot.gs)
 - [Google Image Search Command](https://github.com/wreed12345/GroupMe-Google-Apps-Script-Examples/blob/master/Random%20Examples/Images.gs)
 - [Current Stock Price Bot](https://github.com/wreed12345/GroupMe-Bots-With-Google-Apps-Script/blob/master/Random%20Examples/StockTicker.gs)
+- [@everyone Bot](https://github.com/DanielGaull/GroupMe-Bots-With-Google-Apps-Script/blob/patch-1/Random%20Examples/MentionAll.gs)
 
 
 ### To Do:
