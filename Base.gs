@@ -13,9 +13,7 @@ function sendImage(text, imageURL) {
 // Will include the "message" parameter appended after the "username" string, with the "username" parameter bolded
 // Mentioning a user by using an invalid ID (like 0) allows you to bold text without mentioning an actual user
 function mentionUser(message, username, userId) {
-  UrlFetchApp.fetch("https://api.groupme.com/v3/bots/post", {"method":"post", "payload":'{"bot_id":"' + botId + '","text": "@' + username + ' ' + message + '", ' + 
-                                                               '"attachments": [{"type": "mentions", "loci": [[0,' + 
-                                                             username.length + ']], "user_ids": ["' + userId + '"]}]}'});
+  UrlFetchApp.fetch("https://api.groupme.com/v3/bots/post", {"method":"post", "payload":`{"bot_id": "${botId}","text": "@${username} ${message}", "attachments": [{"type": "mentions", "loci": [[0, ${username.length}]], "user_ids": [" ${userId}"]}]}`});
 }
 // Mentions every user in the group
 function mentionAll(message, groupId) {
