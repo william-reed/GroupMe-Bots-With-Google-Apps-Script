@@ -19,6 +19,24 @@ function mentionUser(message, username, userId) {
 function mentionAll(message, groupId) {
   mentionUsers(message, getGroupMembers(groupId));
 }
+// Mentions all users in the array "userIds"
+function mentionUsers(message, userIds) {
+  var userIdsStr = "[";
+  var lociString = "[";
+  for (var i = 0; i < userIds.length; i++) {
+    userIdsStr += userIds[i];
+    lociString += "[0,0]";
+    if (i + 1 < userIds.length) {
+      userIdsStr += ", ";
+      lociString += ", ";
+    } else {
+      userIdsStr += "]";
+      lociString += "]";
+    }
+  }
+  
+  UrlFetchApp.fetch("https://api.groupme.com/v3/bots/post", {"method":"post", "payload":`{"bot_id":"${botId}","text": "${message}", "attachments": [{"type": "mentions", "loci": ${lociString}, "user_ids": ${userIdsStr}}]}`});
+}
 
 // Returns the name of the group by group ID
 function getGroupName(groupId) {
@@ -68,15 +86,10 @@ function doPost(e) {
     }
   }
   
-  // Check if server is running (diagnostics)
-  if (text.toLowerCase().substring(0, 3) == "!hi") {
-    sendText("Hello, " + name);
+  // If a user sends a message starting with "@everyone", the bot will repeat the message, but mention everyone in the group 
+  // so they all get pinged
+  if (text.substring(0, 9) == "@everyone") {
+    var message = text.substring(text.indexOf(' '));
+    mentionAll("@everyone " + message, groupId);
   }
-}
-
-// Send a message every hour see https://developers.google.com/apps-script/reference/script/clock-trigger-builder
-ScriptApp.newTrigger("sendTimelyMessage").timeBased().everyHours(1).create();
-
-function sendTimelyMessage() {
-  sendText("It has been one hour");
 }
